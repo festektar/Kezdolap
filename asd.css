@@ -1,6 +1,5 @@
 body {
     background-color: #1b2223;
-    overflow: scroll;
 }
 
 
@@ -15,7 +14,17 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
+@media screen and (min-width: 900px){
+    .navbar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 55%;
+        font-size: 17px;
+    }
+    
+    
+}
 @media screen and (max-width: 900px) {
     .logo {
         float: right;
@@ -185,14 +194,9 @@ a:active { text-decoration: none; }
     float: right;
     margin-left: 30px;
 }
-.hidden {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
-}
 
-/* @media screen and (min-width: 1000px) {
+
+@media screen and (min-width: 1000px) {
     .hidden {
         opacity: 0;
         filter: blur(5px);
@@ -216,7 +220,7 @@ a:active { text-decoration: none; }
         transition: all 1s;
     }
 }
-*/
+
 
 .show {
     opacity: 1;
@@ -259,74 +263,70 @@ a:active { text-decoration: none; }
 .alt-btn:hover {
     color: #0ef6cc;
 }
-@media screen and (min-width: 900px) {
-    .fo-btn {
-        position: relative;
-        text-decoration: none;
-        font-weight: 400;
-        color: #0ef6cc;
-        transition: all .35s ease;
-    
+.fo-btn {
+    position: relative;
+    text-decoration: none;
+    font-weight: 400;
+    color: #0ef6cc;
+    transition: all .35s ease;
+
+    &::before {
+        content: ""; 
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: yellow;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s; 
+        transition: all 0.3s ease-in-out 0s; 
+    }   
+
+    &:hover {
+        color: yellow;
+
         &::before {
-            content: ""; 
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: yellow;
-            visibility: hidden;
-            -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-            -webkit-transition: all 0.3s ease-in-out 0s; 
-            transition: all 0.3s ease-in-out 0s; 
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
         }   
-    
-        &:hover {
-            color: yellow;
-    
-            &::before {
-                visibility: visible;
-                -webkit-transform: scaleX(1);
-                transform: scaleX(1);
-            }   
-        }   
-    }
-    .alt-btn {
-        position: relative;
-        text-decoration: none;
-        font-weight: 400;
-        color: white;
-        transition: all .35s ease;
-    
-        &::before {
-            content: ""; 
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: yellow;
-            visibility: hidden;
-            -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-            -webkit-transition: all 0.3s ease-in-out 0s; 
-            transition: all 0.3s ease-in-out 0s; 
-        }   
-    
-        &:hover {
-            color: yellow;
-    
-            &::before {
-                visibility: visible;
-                -webkit-transform: scaleX(1);
-                transform: scaleX(1);
-            }   
-        }   
-    }
+    }   
 }
+.alt-btn {
+    position: relative;
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+    transition: all .35s ease;
 
+    &::before {
+        content: ""; 
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: yellow;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s; 
+        transition: all 0.3s ease-in-out 0s; 
+    }   
 
+    &:hover {
+        color: yellow;
+
+        &::before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }   
+    }   
+}
 
 .search-btn {
     border: 2px solid #0ef6cc;
