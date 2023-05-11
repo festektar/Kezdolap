@@ -14,6 +14,18 @@ body {
     background-color: #1b2223;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 80%;
+}
+@media screen and (min-width: 900px){
+    .navbar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 55%;
+        font-size: 17px;
+    }
+    
+    
 }
 
 @media screen and (max-width: 900px) {
