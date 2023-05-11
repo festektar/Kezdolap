@@ -46,6 +46,22 @@ body {
     }
    
 }
+.card-items {
+    margin-top: 5px;
+    width: 90%;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+.cart-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    color: black;
+    background-color: #0ef6cc;
+    margin-top: 20px;
+}
 @keyframes transitionIn {
     from {
         opacity: 0;
@@ -241,6 +257,9 @@ a:active { text-decoration: none; }
 }
 .kartya2 {
     transition-delay: 400ms;
+}
+.kartya3 {
+    transition-delay: 600ms;
 }
 
 .szoveg4 {
