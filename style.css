@@ -14,7 +14,7 @@ body {
     background-color: #1b2223;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 80%;
+    width: 100%;
 }
 @media screen and (min-width: 900px){
     .navbar {
@@ -31,8 +31,9 @@ body {
 @media screen and (max-width: 900px) {
     .logo {
         float: right;
-        width: 30%;
+        width: 35%;
         margin-bottom: 15px;
+        margin-right: 0;
     }
     .card {
         margin-top: 35px;
