@@ -44,7 +44,26 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
+    .cart-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    color: black;
+    background-color: #0ef6cc;
+    margin-top: 60px;
+        
+        
+    }
+    .cart-container {
+        margin-top: 50px;
+        
+    }
    
+}
+.cart-img {
+    width: 30px;
+    height: 30px;
 }
 .card-items {
     margin-top: 5px;
