@@ -1,20 +1,26 @@
 body {
     background-color: #1b2223;
-    
+    font-family: sans-serif;
 }
-
-
 .logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 13%;
 }
-.fobox {
+.main-box {
     background-color: #1b2223;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100%;
+}
+@media screen and (max-width: 950px) {
+    .kapcs-title {
+        color: #0ef6cc;
+        margin-bottom: 10px;
+        margin-top: 4rem;
+        text-align: center;
+    }
 }
 @media screen and (min-width: 900px){
     .navbar {
@@ -41,6 +47,13 @@ body {
         background-color: #0ef6cc;
         color: black;
     }
+    .kapcs-title {
+        color: #0ef6cc;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    
     
     
 }
@@ -89,11 +102,13 @@ body {
         background-color: #0ef6cc;
     }
     
+    
 }
 .cart-img {
     width: 30px;
     height: 30px;
 }
+
 .card-items {
     margin-top: 5px;
     width: 90%;
@@ -124,7 +139,7 @@ body {
 img {
     animation: transitionIn 0.75s;
 }
-.keptartalom {
+.img-slideshow {
     margin-top: 20px;
 }
 .firstp {
@@ -148,7 +163,6 @@ img {
     background-color: white;
     font-size: 1.4rem;
     margin-bottom: 100px;
-
 }
 .gomb:hover {
     background-color: #0ef6cc;
@@ -169,11 +183,9 @@ img {
 }
 .szoveg {
     color: #0ef6cc;
-    
 }
 .szoveg2, .szoveg3 {
     color: white;
-
 }
 .szoveg2 {
     transition-delay: 200ms;
@@ -181,11 +193,9 @@ img {
 .szoveg3 {
     transition-delay: 400ms;
 }
-
 .card {
     box-shadow: 0 0.4rem 1.2rem 0 #0ef6cc;
 }
-
 .footer-infos {
     border-top: 2px solid #0ef6cc;
     border-bottom: 2px solid #0ef6cc;
@@ -197,15 +207,13 @@ img {
 footer {
     margin-top: 40px;
 }
-
 .footer-options {
     margin-top: 30px;
     font-size: 17px;
 }
 .footer-hover {
     color: grey;
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
 .footer-hover:hover {
     color: white;
@@ -214,14 +222,8 @@ footer {
     color: grey;
 }
 a:link { text-decoration: none; }
-
-
 a:visited { text-decoration: none; }
-
-
 a:hover { text-decoration: none; }
-
-
 a:active { text-decoration: none; }
 #myBtn {
     display: none;
@@ -238,7 +240,6 @@ a:active { text-decoration: none; }
     padding: 15px;
     border-radius: 4px;
   }
-  
 #myBtn:hover {
     background-color: #0ef6cc;
     color: white;
@@ -246,13 +247,10 @@ a:active { text-decoration: none; }
 .backtotop {
     width: 30px;
     height: 30px;
-    
 }
 .email-cim {
     font-size: 20px;
-    
 }
-
 .basket {
     width: 22px;
     height: 22px;
@@ -268,7 +266,6 @@ a:active { text-decoration: none; }
     transform: translateX(-100%);
     transition: all 1s;
 }
-
 /* @media screen and (min-width: 1000px) {
     .hidden {
         opacity: 0;
@@ -277,8 +274,6 @@ a:active { text-decoration: none; }
         transition: all 1s;
     }
 }
-
-
 @media screen and (max-width: 1000px) {
     .hidden-Y {
         opacity: 0;
@@ -294,12 +289,10 @@ a:active { text-decoration: none; }
     }
 }
 */
-
 .show {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0);
-    
+    transform: translateX(0);  
 }
 .kartya1 {
     transition-delay: 200ms;
@@ -310,18 +303,15 @@ a:active { text-decoration: none; }
 .kartya3 {
     transition-delay: 600ms;
 }
-
 .szoveg4 {
     transition-delay: 0ms;
 }
-.copyright-tag {
-    
+.copyright-tag { 
     color: white;
     border-top: 2px solid #3a4f50;
 }
 .btn-text {
     background-color: #0ef6cc;
-
 }
 .btn-text:hover {
     box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
@@ -335,7 +325,6 @@ a:active { text-decoration: none; }
 .fo-btn:hover {
     text-decoration: none;
     color: white;
-    
 }
 .alt-btn:hover {
     color: #0ef6cc;
@@ -407,11 +396,6 @@ a:active { text-decoration: none; }
     }
     
 }
-
-
-
-
-
 .toggler-color {
     background-color: #3a4f50;
     color: black;
@@ -420,7 +404,6 @@ a:active { text-decoration: none; }
     width: 25px;
     height: 25px;
 }
-
 @media screen and (min-width: 1200px) {
     .right-social-icon {
         margin-right: 45px;
@@ -436,7 +419,6 @@ a:active { text-decoration: none; }
         
     }
 }
-
 h5 {
     color: #0ef6cc;
 }
@@ -462,13 +444,11 @@ h5 {
         color: white;
         font-size: 1.4rem;
         margin-bottom: 100px;
-    
     }
-    
 }
 @media screen and (max-width: 1500px) and (min-width: 900px) {
     .social {
-        margin-bottom: 120px;
+        margin-bottom: 0px;
     }
     .navbar {
         display: block;
@@ -491,33 +471,26 @@ h5 {
 }
 .alt2-text-success {
     color: black;
-   
     display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 40px;
-        width: 34%; 
-        padding: 8px;
-        border-top: 2px solid #0ef6cc;
-        border-bottom: 2px solid #0ef6cc;
-        border-right: none;
-        border-left: none;
-        background-color: #0ef6cc;
-        color: white;
-        font-size: 1.4rem;
-        margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 34%; 
+    padding: 8px;
+    border-top: 2px solid #0ef6cc;
+    border-bottom: 2px solid #0ef6cc;
+    border-right: none;
+    border-left: none;
+    background-color: #0ef6cc;
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 100px;
 }
-.kapcs-title {
-    color: #0ef6cc;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    text-align: center;
-}
+
 .cardok {
     color: white;
 }
 .kapcs-cards {
-    
     text-align: center;
 }
 .h1-btn {
@@ -527,7 +500,6 @@ h5 {
 .payment-icons {
     width: 100px;
     height: 100px;
-   
 }
 .payment-row {
     text-align: center;
@@ -542,4 +514,14 @@ h5 {
 }
 .text3 {
     transition-delay: 600ms;
+}
+.mastercard {
+    color: white;
+    margin-left: 5px;
+    font-size: 15px;
+    font-family: sans-serif;
+ 
+}
+.opening {
+    margin-top: 20px;
 }

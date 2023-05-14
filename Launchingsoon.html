@@ -14,6 +14,7 @@
             padding: 0;
             font-family: 'poppins', sans-serif;
             box-sizing: border-box;
+            overflow: hidden;
         }
         .containers {
             width: 100vw;
@@ -24,6 +25,19 @@
             padding: 0 8%;
             position: relative;
 
+        }
+        @media screen and (max-width: 900px) {
+            .containers {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(background.png);
+            background-position: center;
+            background-size: cover;
+            padding: 0 0;
+            position: relative;
+
+        } 
+        
         }
         .logo {
             width: 120px;
@@ -58,6 +72,8 @@
             align-items: center;
             margin-top: 30px;
             cursor: pointer;
+            
+            max-width: 80%;
         }
         .content button img {
             width: 15px;
@@ -109,17 +125,48 @@
 .cim2 {
     margin-top: 30px;
 }
-        
+.dot {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    
+}
+.felsorolas {
+    display: flex;
+    align-items: center;
+
+}
+.sub-text {
+    width: 50%;
+}
+
+     
     </style>
 </head>
 <body>
     <div class="containers">
-        <img src="https://festektar.hu/wp-content/uploads/2020/10/festektarlogo.png" alt="" class="logo">
+        <a href="index.html"><img src="https://festektar.hu/wp-content/uploads/2020/10/festektarlogo.png" alt="" class="logo"></a>
 
         <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>A webshopunk hamarosan <span>megnyitja </span> kapuit!</h1>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>Örömmel jelentjük be, hogy 2023 Június 25-én reggel 7 órakor Weboldalunk megnyitja kapuit</p>
+                </div>
+                <div class="col-lg-6">
+                    <p class="felsorolas"><img src="https://cdn4.iconfinder.com/data/icons/essential-app-2/16/record-round-circle-dot-1024.png" alt="" class="dot"> 5000+ termék</p>
+                    <p class="felsorolas"><img src="https://cdn4.iconfinder.com/data/icons/essential-app-2/16/record-round-circle-dot-1024.png" alt="" class="dot"> Házhozszállítás </p>
+                    <p class="felsorolas"><img src="https://cdn4.iconfinder.com/data/icons/essential-app-2/16/record-round-circle-dot-1024.png" alt="" class="dot"> Személyes átvétel </p>
+                    <p class="felsorolas"><img src="https://cdn4.iconfinder.com/data/icons/essential-app-2/16/record-round-circle-dot-1024.png" alt="" class="dot"> MasterCard, Visa, Paypal, Apple Pay </p>
+                </div>
+            </div>
             
-            <h1>A webshopunk hamarosan <span>megnyitja </span> kapuit!</h1>
-            <p>Örömmel jelentjük be, hogy 2023 Június 25-én reggel 7 órakor Weboldalunk megnyitja kapuit</p>
+            
             <div class="launch-time">
                 <div>
                     <p id="days">00</p>
@@ -154,16 +201,16 @@
 
         
                  
-                  <div class="d-flex w-100 gap-1">
+                  <div class="d-flex w-100 gap-1  ">
                     
-                    <input type="email" class="form-control box hidden-Y hidden text3 " name="email" id="emailInfo" placeholder="Email cím" required>
-                    <button type="submit" class="btn btn-text hidden-Y hidden text3">Feliratkozás</button>
+                    <input type="email" class="form-control box hidden-Y hidden text3 sub-text " name="email" id="emailInfo" placeholder="Email cím" required> 
+                    <button type="submit" class="btn btn-text hidden-Y hidden text3 sub-btn ">Feliratkozás</button>
                   </div>
                 </form>
             
             </div>
           </div>
-        </div>
+        </div></div>
         <img src="rocket.png" alt="" class="rocket">
         
     </div>

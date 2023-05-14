@@ -1,0 +1,70 @@
+html,
+body {
+  height: 100%;
+  background-color: #1b2223;
+overflow: hidden;}
+
+.container  {
+            width: 1200px;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+            
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.log-btn {
+    color: #0ef6cc;
+}
+.rem-me {
+    color: black;
+}
+.gomb {
+    background-color: #0ef6cc;
+}
+.no-acc {
+    color: black;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.white-bg {
+            width: 800px;
+            height: 600px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }

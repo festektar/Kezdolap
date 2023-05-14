@@ -9,11 +9,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script defer src="app.js"></script>
+    <script defer src="GoToTop.js"></script>
     <title>Festektar.hu - Kezdőlap</title>
 </head>
 <body>
     
-    <div class="container-fluid fobox">
+    <div class="container-fluid main-box">
     <img src="https://festektar.hu/wp-content/uploads/2020/10/festektarlogo.png" alt="" class="logo"></div>
 
     <nav class="navbar navbar-expand-lg ">
@@ -42,7 +43,7 @@
           </div>
         </div>
       </nav>
-      <div class="keptartalom">
+      <div class="img-slideshow">
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -89,7 +90,6 @@
           Szolgáltatásaink
         </span>
       </div>
-
       <div class="container">
         <div class="row">
           <div class="col-lg-4 zoom">
@@ -97,7 +97,7 @@
               <img src="https://www.polifarbe.hu/admin/STORAGE/media/file_20220405105704_file8632_7814.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Webshop</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Webshopunk 2023 Június 25-én reggel 7 órakor megnyitja kapuit!</p>
                 <a href="#" class="btn btn-text">Érdekel</a>
               </div>
             </div>
@@ -107,7 +107,7 @@
               <img src="https://www.polifarbe.hu/admin/STORAGE/media/file_20220405105704_file8632_7814.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Színkeverés</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Egyedi színűre tervezi szobáját, házát? Kérjen tőlünk árajánlatot!</p>
                 <a href="szinkeveres.html" class="btn btn-text">Érdekel</a>
               </div>
             </div>
@@ -117,7 +117,7 @@
               <img src="https://www.polifarbe.hu/admin/STORAGE/media/file_20220405105704_file8632_7814.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Poli-Farbe festékek</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Nincs olyan Poli-Farbe festék, ami nálunk ne lenne megtalálható.</p>
                 <a href="#" class="btn btn-text">Érdekel</a>
               </div>
             </div>
@@ -137,7 +137,6 @@
                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-hover">Poli-Farbe Festék</a></li>
               </ul>
             </div>
-      
             <div class="col-lg-3 col-md-12">
               <h5 class="footer-infos hidden hidden-YX cim1">Elérhetőségeink</h5>
               <ul class="nav flex-column footer-options hidden hidden-YX text2 ">
@@ -147,34 +146,27 @@
                 
               </ul>
             </div>
-      
             <div class="col-lg-4 col-md-12 offset-lg-1">
-              
                 <h5 class="footer-infos hidden-Y hidden  cim2" >Íratkozz fel a hírlevelünkre</h5>
                 <p class="text-sub hidden-Y hidden cim2">Minél hamarabb értesülj az újdonságokról</p>
                 <form class="row g-3" action="https://formsubmit.co/EMAIL CIMET IDE KELL IRNI!!!" method="POST">
          
                   <input type="text" name="_honey" style="display: none;">
         
-                  
                   <input type="hidden" name="_captcha" value="false">
         
                   <input type="hidden" name="_next" value="https://festektar.github.io/Kezdolap/success.html" >
 
-        
-                 
                   <div class="d-flex w-100 gap-4">
-                    
                     <input type="email" class="form-control box hidden-Y hidden text3 " name="email" id="emailInfo" placeholder="Email cím" required>
                     <button type="submit" class="btn btn-text hidden-Y hidden text3">Elküldés</button>
                   </div>
                 </form>
-            
-            </div>
+              </div>
           </div>
           <div class="row payment-row ">
             <div class="col-lg-3 col-md-3 col-sm-3 col-6">
-              <img src="https://cdn3.iconfinder.com/data/icons/payment-method-1/64/_Mastercard-1024.png" alt="" class="payment-icons ">
+              <img src="https://cdn0.iconfinder.com/data/icons/shift-ecommerce/32/Master_Card-1024.png" alt="" class="payment-icons "> <span class="mastercard">Mastercard</span>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-6">
               <img src="https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/visa-1024.png" alt="" class="payment-icons ">
@@ -186,7 +178,7 @@
               <img src="https://cdn3.iconfinder.com/data/icons/font-awesome-brands/640/apple-pay-1024.png" alt="" class="payment-icons ">
             </div>
           </div>
-         
+    
           <div class="d-flex justify-content-between  py-4 copyright-tag">
             <p>&copy; 2023 Festéktár KFT. Minden jog fenttartva.</p>
             <ul class="list-unstyled d-flex">
@@ -194,32 +186,7 @@
               <li class="ms-3"><a class="link-dark" href="#"><img class="social " width="24" height="24" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-1024.png" alt=""></a></li>
               <li class="ms-3"><a class="link-dark" href="#"><img class="right-social-icon social" width="24" height="24" src="https://cdn1.iconfinder.com/data/icons/social-media-2285/512/Colored_Facebook3_svg-512.png" alt=""></a></li>
             </ul>
-           
-          </div >
-          <button class="d-none d-sm-block" onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://cdn4.iconfinder.com/data/icons/navigation-40/24/to-up-1024.png" alt="" class="backtotop d-none d-sm-block"></button>
-          <script>
-           
-            let mybutton = document.getElementById("myBtn");
-            
-           
-            window.onscroll = function() {scrollFunction()};
-            
-            function scrollFunction() {
-              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-              } else {
-                mybutton.style.display = "none";
-              }
-            }
-  
-            function topFunction() {
-              document.body.scrollTop = 0;
-              document.documentElement.scrollTop = 0;
-            }
-            </script>
-            
-
-
-            
+          </div>
+          <button class="d-none d-sm-block" onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://cdn4.iconfinder.com/data/icons/navigation-40/24/to-up-1024.png" alt="" class="backtotop d-none d-sm-block"></button>    
 </body>
 </html>
