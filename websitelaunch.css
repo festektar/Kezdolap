@@ -1,0 +1,96 @@
+body {
+    background-color: #1b2223;
+}
+.launch-time {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.5rem;
+}
+.launch-time div {
+    flex-basis: 135px;
+}
+.launch-time div p {
+    font-size: 70px;
+    margin-bottom: -14px;
+    color: #0ef6cc;
+    font-family: Roboto;
+}
+.launch-time div span {
+    font-family: Roboto;
+    font-size: 22px;
+}
+.ann-text {
+    text-align: center;
+    color: white;
+    font-family: Roboto;
+    font-size: 30px;
+    margin-top: 2rem;
+}
+@media screen and (max-width: 900px){
+
+    .ann-text {
+    text-align: center;
+    color: white;
+    font-family: Roboto;
+    font-size: 30px;
+    margin-top: 5rem;
+    
+    }
+    .launch-time div p {
+        font-size: 70px;
+        margin-bottom: -14px;
+        color: #0ef6cc;
+        font-family: Roboto;
+        margin-left: 20px;
+    }
+    .launch-time div span {
+        font-family: Roboto;
+        font-size: 22px;
+        margin-left: 20px;
+    }
+
+
+
+
+}
+.rocket {
+    width: 150px;
+    position: absolute;
+    right: 2%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+    color: white;
+}
+@keyframes rocket {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    100% {
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+
+.rocket7{
+    width: 150px;
+    position: absolute;
+    left: 2%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+    color: white;
+}
+@keyframes rocket {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    100% {
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+
+
