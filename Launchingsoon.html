@@ -14,33 +14,25 @@
             padding: 0;
             font-family: 'poppins', sans-serif;
             box-sizing: border-box;
-            
+            background-color: #1b2223;    
         }
-        .containers {
-            width: 100vw;
-            height: 100vh;
-            background-color: #1b2223;
-            background-position: center;
-            background-size: cover;
-            padding: 0 8%;
-            position: relative;
-
+        
+        @media screen and (max-width: 700px) {
+            .content {
+            top: 50%;
+            position: absolute;
+            transform: translateY(-50%);
+            color: white;
+            margin-left: 0;
         }
-        @media screen and (max-width: 900px) {
-            .containers {
-            width: 100vw;
-            height: 100vh;
-            background-color: #1b2223;
-            background-position: center;
-            background-size: cover;
-            padding: 0 0;
-            position: relative;
-
-        } 
+        
         .logo {
             display: none;
             
         }
+        .main-text {
+            display: none;
+}
         
         
         }
@@ -50,6 +42,7 @@
             position: absolute;
             transform: translateY(-50%);
             color: white;
+            margin-left: 20px;
         }
         .content h1 {
             font-size: 40px;
@@ -73,7 +66,6 @@
             align-items: center;
             margin-top: 30px;
             cursor: pointer;
-            
             max-width: 80%;
         }
         .content button img {
@@ -140,6 +132,13 @@
 .sub-text {
     width: 50%;
 }
+.logo {
+    margin-top: 40px;
+    margin-left: 20px;
+    
+    
+}
+
 
      
     </style>
@@ -152,7 +151,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h1>A webshopunk hamarosan <span>megnyitja </span> kapuit!</h1>
+                        <h1 class="main-text">A webshopunk hamarosan <span>megnyitja </span> kapuit!</h1>
                     </div>
                 </div>
             <div class="row">
