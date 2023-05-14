@@ -1,6 +1,6 @@
 body {
     background-color: #1b2223;
-    overflow: scroll;
+    
 }
 
 
@@ -24,11 +24,28 @@ body {
         width: 55%;
         font-size: 17px;
     }
+    .login-btn {
+        border: 2px solid #0ef6cc;
+        color: white;
+        margin-left: 20px;
+    }
+    .login-btn:hover {
+        background-color: #0ef6cc;
+        color: black;
+    }
+    .search-btn {
+        border: 2px solid #0ef6cc;
+        color: white;
+    }
+    .search-btn:hover {
+        background-color: #0ef6cc;
+        color: black;
+    }
     
     
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 980px) {
     .logo {
         float: right;
         width: 35%;
@@ -59,7 +76,19 @@ body {
         margin-top: 50px;
         
     }
-   
+    .login-btn {
+        border: 2px solid #0ef6cc;
+        color: black;
+        margin-top: 20px;
+        background-color: #0ef6cc;
+        
+    }
+    .search-btn {
+        border: 2px solid #0ef6cc;
+        color: black;
+        background-color: #0ef6cc;
+    }
+    
 }
 .cart-img {
     width: 30px;
@@ -376,27 +405,13 @@ a:active { text-decoration: none; }
             }   
         }   
     }
+    
 }
 
 
 
-.search-btn {
-    border: 2px solid #0ef6cc;
-    color: white;
-}
-.search-btn:hover {
-    background-color: #0ef6cc;
-    color: black;
-}
-.login-btn {
-    border: 2px solid #0ef6cc;
-    color: white;
-    margin-left: 20px;
-}
-.login-btn:hover {
-    background-color: #0ef6cc;
-    color: black;
-}
+
+
 .toggler-color {
     background-color: #3a4f50;
     color: black;
@@ -451,7 +466,7 @@ h5 {
     }
     
 }
-@media screen and (max-width: 1200px) and (min-width: 900px) {
+@media screen and (max-width: 1500px) and (min-width: 900px) {
     .social {
         margin-bottom: 120px;
     }
@@ -459,7 +474,7 @@ h5 {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 70%;
+        width: 75%;
         font-size: 17px;
     }
 }
